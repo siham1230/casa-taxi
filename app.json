@@ -4,7 +4,7 @@
     "slug": "casa-taxi",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/Redtaxi.png",
     "scheme": "casataxi",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -38,13 +38,14 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#FFD54F",
           "dark": {
             "backgroundColor": "#000000"
-          }
+          },
+          "assetsBundlePatterns": ["**/*"]
         }
       ]
     ],
