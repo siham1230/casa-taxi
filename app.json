@@ -1,57 +1,65 @@
 {
   "expo": {
-    "name": "casa-taxi",
-    "slug": "casa-taxi",
+    "name": "DarRide",
+    "slug": "DarRide",
     "version": "1.0.0",
+    "color": "#black",
     "orientation": "portrait",
-    "icon": "./assets/images/Redtaxi.png",
+    "icon": "./assets/images/iconns.png",
     "scheme": "casataxi",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/iconns.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFD54F"
+    },
+    "assetsBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "config": {
-        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+      "bundleIdentifier": "com.casataxi.app"
+    },
+    "config": {
+      "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+    }
+  },
+  "android": {
+    "adaptiveIcon": {
+      "backgroundColor": "#E6F4FE",
+      "foregroundImage": "./assets/images/android-icon-foreground.png"
+    },
+    "config": {
+      "googleMaps": {
+        "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
       }
     },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "config": {
-        "googleMaps": {
-          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
-        }
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#FFD54F",
-          "dark": {
-            "backgroundColor": "#000000"
-          },
-          "assetsBundlePatterns": ["**/*"]
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
+    "edgeToEdgeEnabled": true,
+    "predictiveBackGestureEnabled": false
+  },
+  "web": {
+    "output": "static",
+    "favicon": "./assets/images/favicon.png"
+  },
+  "plugins": [
+    "expo-router",
+    [
+      {
+        "image": "./assets/images/Redtaxi.png",
+        "imageWidth": 200,
+        "resizeMode": "contain",
+        "backgroundColor": "#FFD54F",
+        "dark": {
+          "backgroundColor": "#FFD54F"
+        },
+        "assetsBundlePatterns": [
+          "**/*"
+        ]
+      }
+    ]
+  ],
+  "experiments": {
+    "typedRoutes": true
   }
 }

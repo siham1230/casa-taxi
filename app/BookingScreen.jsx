@@ -88,7 +88,7 @@ export default function BookingScreen() {
                     <Text style={styles.result}>Estimated duration: {duration} min</Text>
                     <Text style={styles.result}>Estimated price: {price} MAD</Text>
                     <Text style={styles.result}>
-                        (Tarif : {new Date().getHours() >= 20 || new Date().getHours() < 6 ? "Nuit 🌙" : "Jour ☀️"})
+                        (Tarif : {new Date().getHours() >= 20 || new Date().getHours() < 6 ? "Night🌙" : "Day ☀️"})
                     </Text>
                 </View>
             ) : null}
@@ -138,14 +138,20 @@ const styles = StyleSheet.create({
 
     },
     resultBox: {
-        backgroundColor: "#fa5252",
+        backgroundColor: "#868e96",
         padding: 15,
         borderRadius: 10,
         marginTop: 50,
+        alignItems: "center",
+        bordeeRadius: 20,
     },
     result: {
         fontSize: 16,
         fontWeight: "500",
+        width: 200,
+        height: 30,
+        justifyContent: "center",
+        alignItems: "center",
     },
     ButtonContainer: {
         position: 'absolute',
@@ -155,7 +161,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         backgroundColor: '#4263eb',
         borderRadius: 10,
-         padding: 15,
+        padding: 15,
 
     },
 });

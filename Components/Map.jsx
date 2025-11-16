@@ -28,16 +28,16 @@ function Map() {
     });
 
     const taxiLocations = [
-        { id: 1, name: 'Aéroport Mohammed V📍', latitude: 33.60874, longitude: -7.63301 },
-        { id: 2, name: 'Gare Casa-Voyageurs📍', latitude: 33.58980, longitude: -7.59094 },
+        { id: 1, name: 'Ahmed Almokhtar 👨🏻‍🦲', latitude: 33.60874, longitude: -7.63301 },
+        { id: 2, name: 'Brahim ghezawi 🧒🏻', latitude: 33.58980, longitude: -7.59094 },
         { id: 3, name: 'Morocco Mall📍', latitude: 33.57609, longitude: -7.70690 },
-        { id: 4, name: 'Twin Center📍', latitude: 33.58673, longitude: -7.63217 },
-        { id: 5, name: 'Marina de Casablanca📍', latitude: 33.60825, longitude: -7.62395 },
-        { id: 6, name: 'Mosquée Hassan II📍', latitude: 33.60840, longitude: -7.63263 },
-        { id: 7, name: 'Quartier des Habous📍', latitude: 33.57764, longitude: -7.61012 },
-        { id: 8, name: 'Ain Diab📍', latitude: 33.58899, longitude: -7.67363 },
-        { id: 9, name: 'Boulevard Zerktouni📍', latitude: 33.58879, longitude: -7.63362 },
-        { id: 10, name: 'Marché Central📍', latitude: 33.59466, longitude: -7.61214 },
+        { id: 4, name: 'Said Elfathi👨🏻‍🦳', latitude: 33.58673, longitude: -7.63217 },
+        { id: 5, name: 'Mohamed Rachdi 🧔🏻', latitude: 33.60825, longitude: -7.62395 },
+        { id: 6, name: 'Loubna Lharbi 🧕🏻', latitude: 33.60840, longitude: -7.63263 },
+        { id: 7, name: 'Aissa Hogad 🙎🏻‍♂️', latitude: 33.57764, longitude: -7.61012 },
+        { id: 8, name: 'Oussama Mossawi 👱🏻', latitude: 33.58899, longitude: -7.67363 },
+        { id: 9, name: 'Ftima Bolgeri 👩🏻‍🦰', latitude: 33.58879, longitude: -7.63362 },
+        { id: 10, name: 'Abdollah Amghar👴🏻', latitude: 33.59466, longitude: -7.61214 },
 
     ];
     const [taxis, setTaxis] = useState([

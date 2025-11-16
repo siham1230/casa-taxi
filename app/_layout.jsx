@@ -9,7 +9,7 @@ export default function RootLayout() {
 
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="index" />
-        <Stack.Screen name="Map" options={{ title: "map " }} />
+        <Stack.Screen name="Map" options={{ title: "Home " }} />
         <Stack.Screen name="BookingScreen" options={{ title: "Reservation"}} />
         </Stack>
         </SafeAreaView>
