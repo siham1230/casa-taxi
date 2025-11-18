@@ -10,7 +10,7 @@ import { useRideStore } from './useRideStore';
 
 function Map() {
     const { setDepart, setDestination, setDistance } = useRideStore();
-    const handleConfirm = () => {
+    const setDefaultLocations = () => {
         setDepart({ latitude: 33.5899, longitude: -7.6039 });
         setDestination({ latitude: 33.5731, longitude: -7.5898 });
         setDistance(4200);
@@ -30,7 +30,7 @@ function Map() {
     const taxiLocations = [
         { id: 1, name: 'Ahmed Almokhtar 👨🏻‍🦲', latitude: 33.60874, longitude: -7.63301 },
         { id: 2, name: 'Brahim ghezawi 🧒🏻', latitude: 33.58980, longitude: -7.59094 },
-        { id: 3, name: 'Morocco Mall📍', latitude: 33.57609, longitude: -7.70690 },
+        { id: 3, name: 'Lotfi ghewazi 🧔🏻‍♀️', latitude: 33.57609, longitude: -7.70690 },
         { id: 4, name: 'Said Elfathi👨🏻‍🦳', latitude: 33.58673, longitude: -7.63217 },
         { id: 5, name: 'Mohamed Rachdi 🧔🏻', latitude: 33.60825, longitude: -7.62395 },
         { id: 6, name: 'Loubna Lharbi 🧕🏻', latitude: 33.60840, longitude: -7.63263 },
@@ -90,7 +90,7 @@ function Map() {
                         }}
                         title={location.name}
                         description='Taxi avaible here'
-                        pinColor="red"
+                        pinColor="#1c3fbdff"
                     />
                 ))}
                 {taxis.map((taxi) => (
